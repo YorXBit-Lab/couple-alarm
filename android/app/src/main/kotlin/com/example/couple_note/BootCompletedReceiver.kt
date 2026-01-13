@@ -1,0 +1,13 @@
+package com.example.couple_note
+
+import android.content.BroadcastReceiver
+import android.content.Context
+import android.content.Intent
+
+class BootCompletedReceiver : BroadcastReceiver() {
+    override fun onReceive(context: Context, intent: Intent?) {
+        if (intent?.action == Intent.ACTION_BOOT_COMPLETED) {
+            RescheduleService.enqueueWork(context) // sẽ resolve được vì cùng package
+        }
+    }
+}

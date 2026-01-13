@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Couple Alarm - Privacy Policy & Terms of Service</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: linear-gradient(135deg, #ea66cd 0%, #a24b93 100%);
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+      }
+
+      .header {
+        background: linear-gradient(135deg, #ea66df 0%, #be51b5 100%);
+        color: white;
+        padding: 30px 30px;
+        text-align: center;
+      }
+
+      .header h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        font-weight: 700;
+      }
+
+      .header p {
+        font-size: 1.1em;
+        opacity: 0.9;
+      }
+
+      .lang-switch {
+        margin-top: 20px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+      }
+
+      .lang-btn {
+        padding: 10px 25px;
+        border: 2px solid white;
+        background: transparent;
+        color: white;
+        border-radius: 25px;
+        cursor: pointer;
+        font-size: 1em;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+
+      .lang-btn:hover {
+        background: white;
+        color: #ea66cd;
+      }
+
+      .lang-btn.active {
+        background: white;
+        color: #ea66c9;
+      }
+
+      .content {
+        padding: 40px 30px;
+      }
+
+      .tabs {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 30px;
+        border-bottom: 2px solid #eee;
+        flex-wrap: wrap;
+      }
+
+      .tab-btn {
+        padding: 15px 30px;
+        border: none;
+        background: transparent;
+        color: #666;
+        font-size: 1em;
+        font-weight: 600;
+        cursor: pointer;
+        border-bottom: 3px solid transparent;
+        transition: all 0.3s ease;
+      }
+
+      .tab-btn:hover {
+        color: #ea66c9;
+      }
+
+      .tab-btn.active {
+        color: #e666ea;
+        border-bottom-color: #db66ea;
+      }
+
+      .tab-content {
+        display: none;
+      }
+
+      .tab-content.active {
+        display: block;
+        animation: fadeIn 0.3s ease;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      h2 {
+        color: #ea66df;
+        font-size: 1.8em;
+        margin-bottom: 20px;
+        font-weight: 700;
+      }
+
+      h3 {
+        color: #a24b93;
+        font-size: 1.3em;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-weight: 600;
+      }
+
+      p {
+        margin-bottom: 15px;
+        color: #555;
+      }
+
+      ul {
+        margin: 15px 0 15px 30px;
+      }
+
+      li {
+        margin-bottom: 10px;
+        color: #555;
+      }
+
+      .last-updated {
+        text-align: center;
+        padding: 20px;
+        background: #f8f9fa;
+        color: #666;
+        font-style: italic;
+      }
+
+      .highlight {
+        background: #fff3cd;
+        padding: 15px;
+        border-left: 4px solid #ffc107;
+        margin: 20px 0;
+        border-radius: 5px;
+      }
+
+      @media (max-width: 768px) {
+        .header h1 {
+          font-size: 1.8em;
+        }
+
+        .content {
+          padding: 30px 20px;
+        }
+
+        .tab-btn {
+          padding: 12px 20px;
+          font-size: 0.9em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Couple Alarm</h1>
+        <p id="headerSubtitle">Privacy Policy & Terms of Service</p>
+        <div class="lang-switch">
+          <button class="lang-btn active" onclick="switchLang('en')">
+            English
+          </button>
+          <button class="lang-btn" onclick="switchLang('vi')">
+            Tiếng Việt
+          </button>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="tabs">
+          <button
+            class="tab-btn active"
+            onclick="switchTab('privacy')"
+            id="tabPrivacy"
+          >
+            Privacy Policy
+          </button>
+          <button class="tab-btn" onclick="switchTab('terms')" id="tabTerms">
+            Terms of Service
+          </button>
+        </div>
+
+        <!-- Privacy Policy Tab -->
+        <div class="tab-content active" id="privacy">
+          <div class="en-content">
+            <h2>Privacy Policy</h2>
+            <p><strong>Effective Date:</strong> October 30, 2025</p>
+
+            <h3>1. Introduction</h3>
+            <p>
+              Welcome to Couple Alarm. We respect your privacy and are committed
+              to protecting your personal data. This privacy policy explains how
+              we collect, use, and safeguard your information when you use our
+              mobile application.
+            </p>
+
+            <h3>2. Information We Collect</h3>
+            <p>We collect the following types of information:</p>
+            <ul>
+              <li>
+                <strong>Account Information:</strong> When you sign in with
+                Google, we collect your email address, name, and profile
+                picture.
+              </li>
+              <li>
+                <strong>User Content:</strong> Notes, to-do lists, reminders,
+                and any content you create within the app.
+              </li>
+              <li>
+                <strong>Connection Data:</strong> Information about your coupled
+                partner connection, including connection codes and QR codes.
+              </li>
+              <li>
+                <strong>Device Information:</strong> Device type, operating
+                system, unique device identifiers, and mobile network
+                information.
+              </li>
+              <li>
+                <strong>Usage Data:</strong> How you interact with the app,
+                including features used and app performance data.
+              </li>
+              <li>
+                <strong>Notification Data:</strong> Push notification tokens to
+                send you reminders and alerts.
+              </li>
+            </ul>
+
+            <h3>3. How We Use Your Information</h3>
+            <p>We use your information to:</p>
+            <ul>
+              <li>Provide and maintain the Couple Alarm service</li>
+              <li>Enable partner connections and shared content features</li>
+              <li>Send reminder notifications and wake-up alarms</li>
+              <li>Synchronize your data across devices</li>
+              <li>Improve and optimize app performance</li>
+              <li>Provide customer support</li>
+              <li>
+                Display personalized advertisements through Google Mobile Ads
+              </li>
+              <li>Ensure app security and prevent fraud</li>
+            </ul>
+
+            <h3>4. Data Sharing and Third Parties</h3>
+            <p>We use the following third-party services:</p>
+            <ul>
+              <li>
+                <strong>Firebase (Google):</strong> Authentication, Cloud
+                Firestore database, Cloud Storage, Cloud Messaging, and Cloud
+                Functions
+              </li>
+              <li><strong>Google Sign-In:</strong> For user authentication</li>
+              <li>
+                <strong>Google Mobile Ads:</strong> To display advertisements
+              </li>
+            </ul>
+            <p>
+              We do not sell your personal information to third parties. Your
+              shared content (notes, reminders, to-dos) is only accessible by
+              you and your connected partner.
+            </p>
+
+            <h3>5. Data Storage and Security</h3>
+            <p>
+              Your data is stored securely using Firebase Cloud Firestore and
+              Firebase Storage. We implement appropriate technical and
+              organizational measures to protect your information, including:
+            </p>
+            <ul>
+              <li>Encrypted data transmission (HTTPS)</li>
+              <li>Firebase App Check for app authentication</li>
+              <li>Secure authentication through Google Sign-In</li>
+              <li>Regular security updates and monitoring</li>
+            </ul>
+
+            <h3>6. Special Permissions</h3>
+            <div class="highlight">
+              <p>
+                <strong>Wake-Up Alarm Feature:</strong> Our app uses special
+                permissions to wake your device and display alarm screens
+                without requiring password entry. This is essential for the
+                reminder alarm functionality. We only use this permission when
+                you have active reminders set.
+              </p>
+            </div>
+            <p>Other permissions we request:</p>
+            <ul>
+              <li>
+                <strong>Camera:</strong> To scan QR codes for partner connection
+              </li>
+              <li>
+                <strong>Notifications:</strong> To send you reminders and alerts
+              </li>
+              <li>
+                <strong>Internet:</strong> To sync your data and connect with
+                your partner
+              </li>
+              <li><strong>Vibration:</strong> For alarm notifications</li>
+              <li><strong>Audio:</strong> To play alarm sounds</li>
+              <li><strong>Volume Control:</strong> To adjust alarm volume</li>
+            </ul>
+
+            <h3>7. Your Rights</h3>
+            <p>You have the right to:</p>
+            <ul>
+              <li>Access your personal data</li>
+              <li>Correct inaccurate data</li>
+              <li>Delete your account and all associated data</li>
+              <li>Disconnect from your partner at any time</li>
+              <li>Opt-out of personalized advertisements</li>
+              <li>Export your data</li>
+            </ul>
+
+            <h3>8. Data Retention</h3>
+            <p>
+              We retain your data for as long as your account is active. If you
+              delete your account, all your personal data and content will be
+              permanently deleted within 30 days, except where we are required
+              to retain it by law.
+            </p>
+
+            <h3>9. Children's Privacy</h3>
+            <p>
+              Couple Alarm is intended for users aged 13 and above. We do not
+              knowingly collect personal information from children under 13. If
+              you believe we have collected information from a child under 13,
+              please contact us immediately.
+            </p>
+
+            <h3>10. Changes to This Policy</h3>
+            <p>
+              We may update this privacy policy from time to time. We will
+              notify you of any changes by posting the new policy in the app and
+              updating the "Effective Date" above.
+            </p>
+
+            <h3>11. Contact Us</h3>
+            <p>
+              If you have any questions about this privacy policy, please
+              contact us at:
+            </p>
+            <p><strong>Email:</strong> support@couplealarm.app</p>
+          </div>
+
+          <div class="vi-content" style="display: none">
+            <h2>Chính Sách Bảo Mật</h2>
+            <p><strong>Ngày có hiệu lực:</strong> 30 tháng 10, 2025</p>
+
+            <h3>1. Giới Thiệu</h3>
+            <p>
+              Chào mừng đến với Couple Alarm. Chúng tôi tôn trọng quyền riêng tư
+              của bạn và cam kết bảo vệ dữ liệu cá nhân của bạn. Chính sách bảo
+              mật này giải thích cách chúng tôi thu thập, sử dụng và bảo vệ
+              thông tin của bạn khi bạn sử dụng ứng dụng di động của chúng tôi.
+            </p>
+
+            <h3>2. Thông Tin Chúng Tôi Thu Thập</h3>
+            <p>Chúng tôi thu thập các loại thông tin sau:</p>
+            <ul>
+              <li>
+                <strong>Thông tin tài khoản:</strong> Khi bạn đăng nhập bằng
+                Google, chúng tôi thu thập địa chỉ email, tên và ảnh đại diện
+                của bạn.
+              </li>
+              <li>
+                <strong>Nội dung người dùng:</strong> Ghi chú, danh sách việc
+                cần làm, lời nhắc và bất kỳ nội dung nào bạn tạo trong ứng dụng.
+              </li>
+              <li>
+                <strong>Dữ liệu kết nối:</strong> Thông tin về kết nối với đối
+                tác của bạn, bao gồm mã kết nối và mã QR.
+              </li>
+              <li>
+                <strong>Thông tin thiết bị:</strong> Loại thiết bị, hệ điều
+                hành, mã định danh thiết bị duy nhất và thông tin mạng di động.
+              </li>
+              <li>
+                <strong>Dữ liệu sử dụng:</strong> Cách bạn tương tác với ứng
+                dụng, bao gồm các tính năng được sử dụng và dữ liệu hiệu suất
+                ứng dụng.
+              </li>
+              <li>
+                <strong>Dữ liệu thông báo:</strong> Token thông báo đẩy để gửi
+                cho bạn lời nhắc và cảnh báo.
+              </li>
+            </ul>
+
+            <h3>3. Cách Chúng Tôi Sử Dụng Thông Tin Của Bạn</h3>
+            <p>Chúng tôi sử dụng thông tin của bạn để:</p>
+            <ul>
+              <li>Cung cấp và duy trì dịch vụ Couple Alarm</li>
+              <li>
+                Cho phép kết nối đối tác và các tính năng chia sẻ nội dung
+              </li>
+              <li>Gửi thông báo nhắc nhở và báo thức</li>
+              <li>Đồng bộ hóa dữ liệu của bạn trên các thiết bị</li>
+              <li>Cải thiện và tối ưu hóa hiệu suất ứng dụng</li>
+              <li>Cung cấp hỗ trợ khách hàng</li>
+              <li>
+                Hiển thị quảng cáo được cá nhân hóa thông qua Google Mobile Ads
+              </li>
+              <li>Đảm bảo bảo mật ứng dụng và ngăn chặn gian lận</li>
+            </ul>
+
+            <h3>4. Chia Sẻ Dữ Liệu và Bên Thứ Ba</h3>
+            <p>Chúng tôi sử dụng các dịch vụ bên thứ ba sau:</p>
+            <ul>
+              <li>
+                <strong>Firebase (Google):</strong> Xác thực, cơ sở dữ liệu
+                Cloud Firestore, Cloud Storage, Cloud Messaging và Cloud
+                Functions
+              </li>
+              <li><strong>Google Sign-In:</strong> Để xác thực người dùng</li>
+              <li><strong>Google Mobile Ads:</strong> Để hiển thị quảng cáo</li>
+            </ul>
+            <p>
+              Chúng tôi không bán thông tin cá nhân của bạn cho bên thứ ba. Nội
+              dung được chia sẻ của bạn (ghi chú, lời nhắc, việc cần làm) chỉ có
+              thể truy cập bởi bạn và đối tác được kết nối của bạn.
+            </p>
+
+            <h3>5. Lưu Trữ và Bảo Mật Dữ Liệu</h3>
+            <p>
+              Dữ liệu của bạn được lưu trữ an toàn bằng Firebase Cloud Firestore
+              và Firebase Storage. Chúng tôi thực hiện các biện pháp kỹ thuật và
+              tổ chức phù hợp để bảo vệ thông tin của bạn, bao gồm:
+            </p>
+            <ul>
+              <li>Truyền dữ liệu được mã hóa (HTTPS)</li>
+              <li>Firebase App Check để xác thực ứng dụng</li>
+              <li>Xác thực an toàn thông qua Google Sign-In</li>
+              <li>Cập nhật và giám sát bảo mật thường xuyên</li>
+            </ul>
+
+            <h3>6. Quyền Đặc Biệt</h3>
+            <div class="highlight">
+              <p>
+                <strong>Tính năng Báo thức Đánh thức:</strong> Ứng dụng của
+                chúng tôi sử dụng quyền đặc biệt để đánh thức thiết bị của bạn
+                và hiển thị màn hình báo thức mà không cần nhập mật khẩu. Điều
+                này là cần thiết cho chức năng báo thức nhắc nhở. Chúng tôi chỉ
+                sử dụng quyền này khi bạn có lời nhắc đang hoạt động.
+              </p>
+            </div>
+            <p>Các quyền khác chúng tôi yêu cầu:</p>
+            <ul>
+              <li><strong>Camera:</strong> Để quét mã QR kết nối đối tác</li>
+              <li>
+                <strong>Thông báo:</strong> Để gửi cho bạn lời nhắc và cảnh báo
+              </li>
+              <li>
+                <strong>Internet:</strong> Để đồng bộ hóa dữ liệu của bạn và kết
+                nối với đối tác
+              </li>
+              <li><strong>Rung:</strong> Cho thông báo báo thức</li>
+              <li><strong>Âm thanh:</strong> Để phát âm thanh báo thức</li>
+              <li>
+                <strong>Điều khiển âm lượng:</strong> Để điều chỉnh âm lượng báo
+                thức
+              </li>
+            </ul>
+
+            <h3>7. Quyền Của Bạn</h3>
+            <p>Bạn có quyền:</p>
+            <ul>
+              <li>Truy cập dữ liệu cá nhân của bạn</li>
+              <li>Sửa dữ liệu không chính xác</li>
+              <li>Xóa tài khoản và tất cả dữ liệu liên quan</li>
+              <li>Ngắt kết nối với đối tác của bạn bất cứ lúc nào</li>
+              <li>Từ chối quảng cáo được cá nhân hóa</li>
+              <li>Xuất dữ liệu của bạn</li>
+            </ul>
+
+            <h3>8. Lưu Giữ Dữ Liệu</h3>
+            <p>
+              Chúng tôi lưu giữ dữ liệu của bạn miễn là tài khoản của bạn còn
+              hoạt động. Nếu bạn xóa tài khoản, tất cả dữ liệu cá nhân và nội
+              dung của bạn sẽ bị xóa vĩnh viễn trong vòng 30 ngày, trừ khi chúng
+              tôi được yêu cầu lưu giữ theo luật pháp.
+            </p>
+
+            <h3>9. Quyền Riêng Tư Của Trẻ Em</h3>
+            <p>
+              Couple Alarm dành cho người dùng từ 13 tuổi trở lên. Chúng tôi
+              không cố ý thu thập thông tin cá nhân từ trẻ em dưới 13 tuổi. Nếu
+              bạn tin rằng chúng tôi đã thu thập thông tin từ trẻ em dưới 13
+              tuổi, vui lòng liên hệ với chúng tôi ngay lập tức.
+            </p>
+
+            <h3>10. Thay Đổi Chính Sách Này</h3>
+            <p>
+              Chúng tôi có thể cập nhật chính sách bảo mật này theo thời gian.
+              Chúng tôi sẽ thông báo cho bạn về bất kỳ thay đổi nào bằng cách
+              đăng chính sách mới trong ứng dụng và cập nhật "Ngày có hiệu lực"
+              ở trên.
+            </p>
+
+            <h3>11. Liên Hệ Chúng Tôi</h3>
+            <p>
+              Nếu bạn có bất kỳ câu hỏi nào về chính sách bảo mật này, vui lòng
+              liên hệ với chúng tôi tại:
+            </p>
+            <p><strong>Email:</strong> support@couplealarm.app</p>
+          </div>
+        </div>
+
+        <!-- Terms of Service Tab -->
+        <div class="tab-content" id="terms">
+          <div class="en-content">
+            <h2>Terms of Service</h2>
+            <p><strong>Effective Date:</strong> October 30, 2025</p>
+
+            <h3>1. Acceptance of Terms</h3>
+            <p>
+              By accessing and using Couple Alarm, you accept and agree to be
+              bound by these Terms of Service. If you do not agree to these
+              terms, please do not use our app.
+            </p>
+
+            <h3>2. Description of Service</h3>
+            <p>Couple Alarm is a mobile application that allows couples to:</p>
+            <ul>
+              <li>
+                Create, view, edit, and delete reminders, to-do lists, and notes
+              </li>
+              <li>
+                Share content with a connected partner through three tabs: Mine,
+                Lover, and Couple
+              </li>
+              <li>
+                Connect with a partner via connection code or QR code scanning
+              </li>
+              <li>Receive wake-up alarms and reminder notifications</li>
+              <li>Synchronize data across devices</li>
+            </ul>
+
+            <h3>3. User Accounts</h3>
+            <p>To use Couple Alarm, you must:</p>
+            <ul>
+              <li>Be at least 13 years old</li>
+              <li>Sign in with a valid Google account</li>
+              <li>Provide accurate and complete information</li>
+              <li>Maintain the security of your account credentials</li>
+              <li>
+                Notify us immediately of any unauthorized use of your account
+              </li>
+            </ul>
+
+            <h3>4. Partner Connections</h3>
+            <p>When you connect with a partner:</p>
+            <ul>
+              <li>Both parties must consent to the connection</li>
+              <li>
+                You will be able to view, edit, and delete each other's shared
+                content
+              </li>
+              <li>You can disconnect from your partner at any time</li>
+              <li>
+                Upon disconnection, shared content will no longer be accessible
+                to the disconnected partner
+              </li>
+              <li>
+                You are responsible for managing your partner connection
+                appropriately
+              </li>
+            </ul>
+
+            <h3>5. User Conduct</h3>
+            <p>You agree not to:</p>
+            <ul>
+              <li>Use the app for any illegal or unauthorized purpose</li>
+              <li>Violate any laws in your jurisdiction</li>
+              <li>Infringe on the rights of others</li>
+              <li>Upload malicious code or viruses</li>
+              <li>Attempt to gain unauthorized access to our systems</li>
+              <li>Harass, abuse, or harm another person</li>
+              <li>Impersonate any person or entity</li>
+              <li>Interfere with or disrupt the app or servers</li>
+            </ul>
+
+            <h3>6. Content Ownership and License</h3>
+            <p>
+              You retain all rights to the content you create in Couple Alarm
+              (notes, reminders, to-dos). By using our app, you grant us a
+              limited license to store, display, and transmit your content
+              solely for the purpose of providing our services to you and your
+              connected partner.
+            </p>
+
+            <h3>7. Wake-Up Alarm Feature</h3>
+            <div class="highlight">
+              <p>
+                <strong>Important:</strong> The wake-up alarm feature will
+                activate your device screen without requiring password entry. By
+                using this feature, you acknowledge and accept that:
+              </p>
+              <ul>
+                <li>Your device may wake up at scheduled reminder times</li>
+                <li>The alarm screen will display without authentication</li>
+                <li>
+                  You are responsible for setting appropriate reminder times
+                </li>
+                <li>
+                  We are not liable for any consequences of alarm activations
+                </li>
+              </ul>
+            </div>
+
+            <h3>8. Advertising</h3>
+            <p>
+              Couple Alarm displays advertisements through Google Mobile Ads. By
+              using our app, you agree to view these advertisements. We do not
+              control the content of third-party advertisements.
+            </p>
+
+            <h3>9. Intellectual Property</h3>
+            <p>
+              The Couple Alarm app, including its design, logo, features, and
+              functionality, is owned by us and protected by copyright,
+              trademark, and other intellectual property laws. You may not copy,
+              modify, distribute, or create derivative works without our express
+              written permission.
+            </p>
+
+            <h3>10. Limitation of Liability</h3>
+            <p>To the maximum extent permitted by law:</p>
+            <ul>
+              <li>
+                Couple Alarm is provided "as is" without warranties of any kind
+              </li>
+              <li>
+                We are not liable for any damages arising from your use of the
+                app
+              </li>
+              <li>We do not guarantee uninterrupted or error-free service</li>
+              <li>We are not responsible for data loss or corruption</li>
+              <li>
+                Our total liability shall not exceed the amount you paid us in
+                the past 12 months (if any)
+              </li>
+            </ul>
+
+            <h3>11. Indemnification</h3>
+            <p>
+              You agree to indemnify and hold harmless Couple Alarm and its
+              affiliates from any claims, damages, losses, liabilities, and
+              expenses arising from your use of the app or violation of these
+              terms.
+            </p>
+
+            <h3>12. Termination</h3>
+            <p>
+              We reserve the right to suspend or terminate your account at any
+              time for violations of these Terms of Service. You may terminate
+              your account at any time by deleting it through the app settings.
+            </p>
+
+            <h3>13. Changes to Terms</h3>
+            <p>
+              We may modify these Terms of Service at any time. We will notify
+              you of significant changes through the app. Your continued use of
+              Couple Alarm after changes constitute acceptance of the new terms.
+            </p>
+
+            <h3>14. Governing Law</h3>
+            <p>
+              These Terms of Service shall be governed by and construed in
+              accordance with the laws of Vietnam, without regard to its
+              conflict of law provisions.
+            </p>
+
+            <h3>15. Contact Information</h3>
+            <p>
+              For questions about these Terms of Service, please contact us at:
+            </p>
+            <p><strong>Email:</strong> support@couplealarm.app</p>
+          </div>
+
+          <div class="vi-content" style="display: none">
+            <h2>Điều Khoản Dịch Vụ</h2>
+            <p><strong>Ngày có hiệu lực:</strong> 30 tháng 10, 2025</p>
+
+            <h3>1. Chấp Nhận Điều Khoản</h3>
+            <p>
+              Bằng việc truy cập và sử dụng Couple Alarm, bạn chấp nhận và đồng
+              ý bị ràng buộc bởi các Điều khoản Dịch vụ này. Nếu bạn không đồng
+              ý với các điều khoản này, vui lòng không sử dụng ứng dụng của
+              chúng tôi.
+            </p>
+
+            <h3>2. Mô Tả Dịch Vụ</h3>
+            <p>Couple Alarm là một ứng dụng di động cho phép các cặp đôi:</p>
+            <ul>
+              <li>
+                Tạo, xem, chỉnh sửa và xóa lời nhắc, danh sách việc cần làm và
+                ghi chú
+              </li>
+              <li>
+                Chia sẻ nội dung với đối tác được kết nối thông qua ba tab:
+                Mine, Lover và Couple
+              </li>
+              <li>Kết nối với đối tác qua mã kết nối hoặc quét mã QR</li>
+              <li>Nhận báo thức đánh thức và thông báo nhắc nhở</li>
+              <li>Đồng bộ hóa dữ liệu trên các thiết bị</li>
+            </ul>
+
+            <h3>3. Tài Khoản Người Dùng</h3>
+            <p>Để sử dụng Couple Alarm, bạn phải:</p>
+            <ul>
+              <li>Ít nhất 13 tuổi</li>
+              <li>Đăng nhập bằng tài khoản Google hợp lệ</li>
+              <li>Cung cấp thông tin chính xác và đầy đủ</li>
+              <li>Duy trì bảo mật thông tin đăng nhập tài khoản của bạn</li>
+              <li>
+                Thông báo cho chúng tôi ngay lập tức về bất kỳ việc sử dụng trái
+                phép nào đối với tài khoản của bạn
+              </li>
+            </ul>
+
+            <h3>4. Kết Nối Đối Tác</h3>
+            <p>Khi bạn kết nối với đối tác:</p>
+            <ul>
+              <li>Cả hai bên phải đồng ý kết nối</li>
+              <li>
+                Bạn sẽ có thể xem, chỉnh sửa và xóa nội dung được chia sẻ của
+                nhau
+              </li>
+              <li>
+                Bạn có thể ngắt kết nối với đối tác của mình bất cứ lúc nào
+              </li>
+              <li>
+                Khi ngắt kết nối, nội dung được chia sẻ sẽ không còn có thể truy
+                cập bởi đối tác bị ngắt kết nối
+              </li>
+              <li>
+                Bạn chịu trách nhiệm quản lý kết nối đối tác của mình một cách
+                phù hợp
+              </li>
+            </ul>
+
+            <h3>5. Hành Vi Người Dùng</h3>
+            <p>Bạn đồng ý không:</p>
+            <ul>
+              <li>
+                Sử dụng ứng dụng cho bất kỳ mục đích bất hợp pháp hoặc trái phép
+                nào
+              </li>
+              <li>Vi phạm bất kỳ luật nào trong phạm vi quyền hạn của bạn</li>
+              <li>Xâm phạm quyền của người khác</li>
+              <li>Tải lên mã độc hoặc vi-rút</li>
+              <li>Cố gắng truy cập trái phép vào hệ thống của chúng tôi</li>
+              <li>Quấy rối, lạm dụng hoặc làm hại người khác</li>
+              <li>Mạo danh bất kỳ cá nhân hoặc tổ chức nào</li>
+              <li>Can thiệp hoặc làm gián đoạn ứng dụng hoặc máy chủ</li>
+            </ul>
+
+            <h3>6. Quyền Sở Hữu và Giấy Phép Nội Dung</h3>
+            <p>
+              Bạn giữ tất cả các quyền đối với nội dung bạn tạo trong Couple
+              Note (ghi chú, lời nhắc, việc cần làm). Bằng việc sử dụng ứng dụng
+              của chúng tôi, bạn cấp cho chúng tôi giấy phép giới hạn để lưu
+              trữ, hiển thị và truyền tải nội dung của bạn chỉ cho mục đích cung
+              cấp dịch vụ của chúng tôi cho bạn và đối tác được kết nối của bạn.
+            </p>
+
+            <h3>7. Tính Năng Báo Thức Đánh Thức</h3>
+            <div class="highlight">
+              <p>
+                <strong>Quan trọng:</strong> Tính năng báo thức đánh thức sẽ
+                kích hoạt màn hình thiết bị của bạn mà không yêu cầu nhập mật
+                khẩu. Bằng việc sử dụng tính năng này, bạn thừa nhận và chấp
+                nhận rằng:
+              </p>
+              <ul>
+                <li>
+                  Thiết bị của bạn có thể thức dậy vào thời gian nhắc nhở đã lên
+                  lịch
+                </li>
+                <li>Màn hình báo thức sẽ hiển thị mà không cần xác thực</li>
+                <li>
+                  Bạn chịu trách nhiệm thiết lập thời gian nhắc nhở phù hợp
+                </li>
+                <li>
+                  Chúng tôi không chịu trách nhiệm về bất kỳ hậu quả nào của
+                  việc kích hoạt báo thức
+                </li>
+              </ul>
+            </div>
+
+            <h3>8. Quảng Cáo</h3>
+            <p>
+              Couple Alarm hiển thị quảng cáo thông qua Google Mobile Ads. Bằng
+              việc sử dụng ứng dụng của chúng tôi, bạn đồng ý xem những quảng
+              cáo này. Chúng tôi không kiểm soát nội dung của quảng cáo bên thứ
+              ba.
+            </p>
+
+            <h3>9. Sở Hữu Trí Tuệ</h3>
+            <p>
+              Ứng dụng Couple Alarm, bao gồm thiết kế, logo, tính năng và chức
+              năng của nó, thuộc sở hữu của chúng tôi và được bảo vệ bởi luật
+              bản quyền, nhãn hiệu và các luật sở hữu trí tuệ khác. Bạn không
+              được sao chép, sửa đổi, phân phối hoặc tạo tác phẩm phái sinh mà
+              không có sự cho phép rõ ràng bằng văn bản của chúng tôi.
+            </p>
+
+            <h3>10. Giới Hạn Trách Nhiệm</h3>
+            <p>Theo mức độ tối đa được pháp luật cho phép:</p>
+            <ul>
+              <li>
+                Couple Alarm được cung cấp "nguyên trạng" mà không có bất kỳ bảo
+                đảm nào
+              </li>
+              <li>
+                Chúng tôi không chịu trách nhiệm về bất kỳ thiệt hại nào phát
+                sinh từ việc bạn sử dụng ứng dụng
+              </li>
+              <li>
+                Chúng tôi không đảm bảo dịch vụ không bị gián đoạn hoặc không có
+                lỗi
+              </li>
+              <li>
+                Chúng tôi không chịu trách nhiệm về mất dữ liệu hoặc hỏng dữ
+                liệu
+              </li>
+              <li>
+                Tổng trách nhiệm của chúng tôi sẽ không vượt quá số tiền bạn đã
+                trả cho chúng tôi trong 12 tháng qua (nếu có)
+              </li>
+            </ul>
+
+            <h3>11. Bồi Thường</h3>
+            <p>
+              Bạn đồng ý bồi thường và giữ cho Couple Alarm và các công ty liên
+              kết của nó không bị thiệt hại từ bất kỳ khiếu nại, thiệt hại, tổn
+              thất, trách nhiệm pháp lý và chi phí nào phát sinh từ việc bạn sử
+              dụng ứng dụng hoặc vi phạm các điều khoản này.
+            </p>
+
+            <h3>12. Chấm Dứt</h3>
+            <p>
+              Chúng tôi có quyền tạm ngưng hoặc chấm dứt tài khoản của bạn bất
+              cứ lúc nào do vi phạm Điều khoản Dịch vụ này. Bạn có thể chấm dứt
+              tài khoản của mình bất cứ lúc nào bằng cách xóa nó thông qua cài
+              đặt ứng dụng.
+            </p>
+
+            <h3>13. Thay Đổi Điều Khoản</h3>
+            <p>
+              Chúng tôi có thể sửa đổi Điều khoản Dịch vụ này bất cứ lúc nào.
+              Chúng tôi sẽ thông báo cho bạn về các thay đổi quan trọng thông
+              qua ứng dụng. Việc bạn tiếp tục sử dụng Couple Alarm sau khi có
+              thay đổi sẽ cấu thành sự chấp nhận các điều khoản mới.
+            </p>
+
+            <h3>14. Luật Điều Chỉnh</h3>
+            <p>
+              Các Điều khoản Dịch vụ này sẽ được điều chỉnh bởi và giải thích
+              theo luật pháp Việt Nam, không kể đến các quy định về xung đột
+              pháp luật của nó.
+            </p>
+
+            <h3>15. Thông Tin Liên Hệ</h3>
+            <p>
+              Đối với các câu hỏi về Điều khoản Dịch vụ này, vui lòng liên hệ
+              với chúng tôi tại:
+            </p>
+            <p><strong>Email:</strong> support@couplealarm.app</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="last-updated" id="lastUpdated">
+        Last updated: October 30, 2025
+      </div>
+    </div>
+
+    <script>
+      let currentLang = "en";
+      let currentTab = "privacy";
+
+      function switchLang(lang) {
+        currentLang = lang;
+
+        // Update language buttons
+        document.querySelectorAll(".lang-btn").forEach((btn) => {
+          btn.classList.remove("active");
+        });
+        event.target.classList.add("active");
+
+        // Update content
+        const enContents = document.querySelectorAll(".en-content");
+        const viContents = document.querySelectorAll(".vi-content");
+
+        if (lang === "en") {
+          enContents.forEach((content) => (content.style.display = "block"));
+          viContents.forEach((content) => (content.style.display = "none"));
+          document.getElementById("headerSubtitle").textContent =
+            "Privacy Policy & Terms of Service";
+          document.getElementById("tabPrivacy").textContent = "Privacy Policy";
+          document.getElementById("tabTerms").textContent = "Terms of Service";
+          document.getElementById("lastUpdated").textContent =
+            "Last updated: October 30, 2025";
+        } else {
+          enContents.forEach((content) => (content.style.display = "none"));
+          viContents.forEach((content) => (content.style.display = "block"));
+          document.getElementById("headerSubtitle").textContent =
+            "Chính Sách Bảo Mật & Điều Khoản Dịch Vụ";
+          document.getElementById("tabPrivacy").textContent =
+            "Chính Sách Bảo Mật";
+          document.getElementById("tabTerms").textContent =
+            "Điều Khoản Dịch Vụ";
+          document.getElementById("lastUpdated").textContent =
+            "Cập nhật lần cuối: 30 tháng 10, 2025";
+        }
+      }
+
+      function switchTab(tab) {
+        currentTab = tab;
+
+        // Update tab buttons
+        document.querySelectorAll(".tab-btn").forEach((btn) => {
+          btn.classList.remove("active");
+        });
+        event.target.classList.add("active");
+
+        // Update tab content
+        document.querySelectorAll(".tab-content").forEach((content) => {
+          content.classList.remove("active");
+        });
+        document.getElementById(tab).classList.add("active");
+
+        // Scroll to top
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
+  </body>
+</html>

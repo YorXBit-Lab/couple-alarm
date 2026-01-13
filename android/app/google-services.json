@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "926599048624",
+    "project_id": "couple-alarm-569c8",
+    "storage_bucket": "couple-alarm-569c8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926599048624:android:32438ea3472762c755ba75",
+        "android_client_info": {
+          "package_name": "com.yorxbit.couplealarm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "926599048624-vo44f6vt67hac2aggmnqu8r7seikb2h7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvhxZSE7duCxogoEmWH-ZPQ0ytYXEW3oU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "926599048624-vo44f6vt67hac2aggmnqu8r7seikb2h7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

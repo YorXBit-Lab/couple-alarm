@@ -1,0 +1,17 @@
+flutter_native_splash:
+  android: true
+  ios: false
+  web: false
+
+  # logo 600x600 bg 1290x2796 branding 750x750( vertical padding  100px)PNG
+  # background_image:
+  color: "#ffffff"
+  image: "assets/images/app_icon.png"
+  # branding:
+
+  android_12:
+    color: "#ffffff"
+    image: "assets/images/app_icon.png"
+    # branding:
+    #do not support bg.  logo 640px circle inside 960 square, branding 600x240 PNG
+# dart run flutter_native_splash:create --path=native_splash.yaml

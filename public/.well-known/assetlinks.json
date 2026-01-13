@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.yorxbit.couplealarm",
+      "sha256_cert_fingerprints": [
+        "68:B8:94:C4:C1:62:A2:91:BC:FC:7D:83:C9:4E:C3:5B:EE:08:44:63:FA:AE:B4:CF:F6:18:DA:05:CF:EA:DD:0E"
+      ]
+    }
+  }
+]
