@@ -56,38 +56,15 @@ class AuthService {
   Future<void> _handleAuthenticationEvent(
     GoogleSignInAuthenticationEvent event,
   ) async {
-    final GoogleSignInAccount? user = switch (event) {
+    _currentUser = switch (event) {
       GoogleSignInAuthenticationEventSignIn() => event.user,
       GoogleSignInAuthenticationEventSignOut() => null,
     };
-
-    _currentUser = user;
-
-    if (user != null) {
-      try {
-        await _signInToFirebase(user);
-      } on FirebaseAuthException catch (e) {
-        debugPrint('Firebase Auth Error: ${e.code} - ${e.message}');
-        throw AuthException(_getFirebaseAuthErrorMessage(e.code), code: e.code);
-      } on FirebaseException catch (e) {
-        debugPrint('Firebase Error: ${e.code} - ${e.message}');
-        throw AuthException(
-          'Lỗi Firebase: ${e.message}',
-          code: e.code ?? 'firebase-error',
-        );
-      } catch (e) {
-        debugPrint('Unexpected error in _handleAuthenticationEvent: $e');
-        throw AuthException('Failed to sign in to Firebase: ${e.toString()}');
-      }
-    }
   }
 
   Future<void> _handleAuthenticationError(Object e) async {
     _currentUser = null;
-    final errorMessage = e is GoogleSignInException
-        ? _errorMessageFromSignInException(e)
-        : 'Unknown error: $e';
-    throw AuthException(errorMessage);
+    debugPrint('Google Sign-In stream error: $e');
   }
 
   Future<UserCredential> _signInToFirebase(
@@ -112,7 +89,6 @@ class AuthService {
           }
         } catch (e) {
           debugPrint('Failed to get authorization: $e');
-          // Tiếp tục mà không có accessToken
         }
       }
 

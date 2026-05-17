@@ -5,7 +5,7 @@ import 'package:couple_note/core/config/app_constants.dart';
 import 'package:couple_note/core/constants/trans_keys.dart';
 import 'package:couple_note/core/services/alarm/alarm_callbacks.dart';
 import 'package:couple_note/core/services/local_notification_service.dart';
-import 'package:couple_note/domain/entities/reminder.dart';
+import 'package:couple_note/features/reminder/domain/entities/reminder.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';

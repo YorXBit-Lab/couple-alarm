@@ -1,5 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:couple_note/domain/entities/reminder.dart';
+import 'package:couple_note/features/reminder/domain/entities/reminder.dart';
 
 class TabCache<T> {
   final List<T> items;

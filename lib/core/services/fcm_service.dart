@@ -1,9 +1,9 @@
 import 'dart:convert';
 import 'dart:ui';
 import 'package:couple_note/core/constants/trans_keys.dart';
-import 'package:couple_note/core/services/lib/core/local_storage_service.dart';
+import 'package:couple_note/core/services/local_storage_service.dart';
 import 'package:couple_note/core/services/local_notification_service.dart';
-import 'package:couple_note/presentation/themes/app_colors.dart';
+import 'package:couple_note/core/config/theme/app_colors.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';

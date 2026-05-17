@@ -1,4 +1,4 @@
-package com.example.couple_note
+package com.yorxbit.couplealarm
 
 import android.content.Context
 import android.content.Intent

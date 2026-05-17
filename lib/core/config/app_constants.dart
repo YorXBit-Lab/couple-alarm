@@ -1,17 +1,13 @@
 import 'package:couple_note/core/constants/trans_keys.dart';
-import 'package:couple_note/presentation/themes/app_colors.dart';
+import 'package:couple_note/core/config/theme/app_colors.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 const String kAlarmPortName = 'alarm_port';
 
-enum NoteCategory { general, date, memory, plan }
-
 enum NotificationType {
   alarm('alarm'),
   reminder('reminder_notification'),
-  todo('todo_notification'),
-  note('note_notification'),
   invite('invitation_response');
 
   const NotificationType(this.value);
@@ -24,10 +20,6 @@ enum NotificationType {
         return NotificationType.alarm;
       case 'NotificationType.reminder':
         return NotificationType.reminder;
-      case 'NotificationType.todo':
-        return NotificationType.todo;
-      case 'NotificationType.note':
-        return NotificationType.note;
       case 'NotificationType.invite':
         return NotificationType.invite;
       default:
@@ -144,7 +136,7 @@ enum AssigneeType {
   }
 }
 
-enum ActivityType { todo, reminder, note, timer, sharedNote }
+enum ActivityType { alarm, timer }
 
 class RecentActivity {
   final String description;
@@ -224,146 +216,11 @@ enum ReminderStatus {
   static String getDescription(ReminderStatus status) {
     switch (status) {
       case ReminderStatus.doing:
-        return 'Nhắc nhở đang được thực hiện';
+        return 'Báo thức đang được thực hiện';
       case ReminderStatus.done:
-        return 'Nhắc nhở đã được dừng';
+        return 'Báo thức đã được dừng';
       case ReminderStatus.overdue:
-        return 'Nhắc nhở đã quá hạn';
-    }
-  }
-}
-
-enum TodoStatus {
-  doing(Color.fromARGB(255, 197, 179, 20), 'doing'),
-  completed(Color.fromARGB(255, 71, 206, 30), 'completed'),
-  overdue(Color.fromARGB(255, 214, 90, 82), 'overdue');
-
-  const TodoStatus(this.color, this.value);
-  final Color color;
-  final String value;
-
-  static TodoStatus fromString(String value) {
-    switch (value.toLowerCase()) {
-      case 'doing':
-        return TodoStatus.doing;
-      case 'completed':
-        return TodoStatus.completed;
-      case 'overdue':
-        return TodoStatus.overdue;
-      default:
-        return TodoStatus.doing;
-    }
-  }
-
-  static String getLabel(TodoStatus status) {
-    switch (status) {
-      case TodoStatus.doing:
-        return TransKeys.doing.tr();
-      case TodoStatus.completed:
-        return TransKeys.complete.tr();
-      case TodoStatus.overdue:
-        return TransKeys.overdue.tr();
-    }
-  }
-
-  static String getDescription(TodoStatus status) {
-    switch (status) {
-      case TodoStatus.doing:
-        return TransKeys.todo_in_progress.tr();
-      case TodoStatus.completed:
-        return TransKeys.todo_has_been_completed.tr();
-      case TodoStatus.overdue:
-        return TransKeys.todo_is_overdue.tr();
-    }
-  }
-}
-
-enum TodoPriority {
-  normal(Color.fromARGB(255, 159, 238, 163), 'normal'),
-  medium(Color.fromARGB(255, 233, 170, 75), 'medium'),
-  high(Color.fromARGB(255, 214, 90, 82), 'high');
-
-  const TodoPriority(this.color, this.value);
-  final Color color;
-  final String value;
-
-  static TodoPriority fromString(String value) {
-    switch (value.toLowerCase()) {
-      case 'normal':
-        return TodoPriority.normal;
-      case 'medium':
-        return TodoPriority.medium;
-      case 'high':
-        return TodoPriority.high;
-      default:
-        return TodoPriority.normal;
-    }
-  }
-
-  static String getLabel(TodoPriority priority) {
-    switch (priority) {
-      case TodoPriority.normal:
-        return TransKeys.low.tr();
-      case TodoPriority.medium:
-        return TransKeys.medium.tr();
-      case TodoPriority.high:
-        return TransKeys.high.tr();
-    }
-  }
-
-  static String getDescription(TodoPriority priority) {
-    switch (priority) {
-      case TodoPriority.normal:
-        return TransKeys.low_sub.tr();
-      case TodoPriority.medium:
-        return TransKeys.medium_sub.tr();
-      case TodoPriority.high:
-        return TransKeys.high_sub.tr();
-    }
-  }
-}
-
-enum NotePriority {
-  normal(Color.fromARGB(255, 159, 238, 163), 'normal'),
-  medium(Color.fromARGB(255, 233, 170, 75), 'medium'),
-  high(Color.fromARGB(255, 214, 90, 82), 'high');
-
-  const NotePriority(this.color, this.value);
-  final Color color;
-  final String value;
-
-  static NotePriority fromString(String value) {
-    switch (value.toLowerCase()) {
-      case 'normal':
-        return NotePriority.normal;
-      case 'medium':
-        return NotePriority.medium;
-      case 'high':
-        return NotePriority.high;
-      default:
-        return NotePriority.normal;
-    }
-  }
-
-  static String getLabel(NotePriority priority) {
-    switch (priority) {
-      case NotePriority.normal:
-        return TransKeys.low.tr();
-      case NotePriority.medium:
-        return TransKeys.medium.tr();
-      case NotePriority.high:
-        return TransKeys.high.tr();
-    }
-  }
-
-  static String getDescription(NotePriority priority) {
-    switch (priority) {
-      case NotePriority.normal:
-        return TransKeys.low_note_sub.tr();
-      case NotePriority.medium:
-        return TransKeys.medium_note_sub.tr();
-      case NotePriority.high:
-        return TransKeys.high_note_sub.tr();
+        return 'Báo thức đã quá hạn';
     }
   }
 }
@@ -414,16 +271,11 @@ enum ErrorCode {
 
   // Business Logic
   coupleNotFound(2001, 'Couple not found'),
-  noteNotFound(2002, 'Note not found'),
-  reminderNotFound(2003, 'Reminder not found'),
-  todoNotFound(2004, 'Todo not found'),
+  alarmNotFound(2003, 'Alarm not found'),
 
   coupleAlreadyExists(3001, 'Couple already exists'),
-  reminderConflict(3002, 'Reminder time conflict'),
+  alarmConflict(3002, 'Alarm time conflict'),
   duplicateEntry(3003, 'Duplicate entry'),
-  noteTitleRequired(3101, 'Note title is required'),
-  noteOwnerRequired(3102, 'Note ownerId is required'),
-  noteTitleTooLong(3103, 'Note title is too long'),
 
   // Media & Storage
   mediaUploadFailed(4001, 'Media upload failed'),
@@ -477,34 +329,6 @@ enum ErrorCode {
   final String message;
 
   const ErrorCode(this.code, this.message);
-}
-
-enum TodoType { personal, shared }
-
-class TodoConversionHelper {
-  static Map<String, dynamic> convertTodoTypeToNewModel({
-    required TodoType type,
-    required bool isPrivate,
-    required String currentUserId,
-    required String? partnerId,
-  }) {
-    switch (type) {
-      case TodoType.personal:
-        return {
-          'category': 'personal',
-          'isPrivate': false,
-          'assignedTo': null,
-          'status': ApprovalStatus.pending,
-        };
-      case TodoType.shared:
-        return {
-          'category': 'shared',
-          'isPrivate': true,
-          'assignedTo': partnerId,
-          'status': ApprovalStatus.pending,
-        };
-    }
-  }
 }
 
 class FilterTab {

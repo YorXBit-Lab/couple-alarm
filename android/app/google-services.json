@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "926599048624-en1tlgo77dhaj69cifuc4s18pchsqb91.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yorxbit.couplealarm",
+            "certificate_hash": "facb8ee1071b4747698c0aa412f458dbf6336a19"
+          }
+        },
+        {
           "client_id": "926599048624-vo44f6vt67hac2aggmnqu8r7seikb2h7.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,6 +37,13 @@
             {
               "client_id": "926599048624-vo44f6vt67hac2aggmnqu8r7seikb2h7.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "926599048624-9d3l9498fmlsss4tkc08j0sbk1jimmqq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.coupleNote"
+              }
             }
           ]
         }

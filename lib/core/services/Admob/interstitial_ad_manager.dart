@@ -55,7 +55,6 @@ class InterstitialAdManager {
           onAdDismissed();
         }
 
-        // Load quảng cáo mới cho lần sau
         loadAd();
       },
       onAdFailedToShowFullScreenContent: (InterstitialAd ad, AdError error) {

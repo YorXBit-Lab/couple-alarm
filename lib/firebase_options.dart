@@ -64,6 +64,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '926599048624',
     projectId: 'couple-alarm-569c8',
     storageBucket: 'couple-alarm-569c8.firebasestorage.app',
+    androidClientId: '926599048624-en1tlgo77dhaj69cifuc4s18pchsqb91.apps.googleusercontent.com',
     iosClientId: '926599048624-ktk5bc4c4olrtmq1ior34u3v8k6stm1q.apps.googleusercontent.com',
     iosBundleId: 'com.yorxbit.couplealarm',
   );
@@ -74,6 +75,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '926599048624',
     projectId: 'couple-alarm-569c8',
     storageBucket: 'couple-alarm-569c8.firebasestorage.app',
+    androidClientId: '926599048624-en1tlgo77dhaj69cifuc4s18pchsqb91.apps.googleusercontent.com',
     iosClientId: '926599048624-9d3l9498fmlsss4tkc08j0sbk1jimmqq.apps.googleusercontent.com',
     iosBundleId: 'com.example.coupleNote',
   );

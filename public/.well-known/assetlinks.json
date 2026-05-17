@@ -8,7 +8,9 @@
       "namespace": "android_app",
       "package_name": "com.yorxbit.couplealarm",
       "sha256_cert_fingerprints": [
-        "68:B8:94:C4:C1:62:A2:91:BC:FC:7D:83:C9:4E:C3:5B:EE:08:44:63:FA:AE:B4:CF:F6:18:DA:05:CF:EA:DD:0E"
+        "8a:55:ee:17:7c:28:28:68:48:b1:2b:6f:c2:23:df:b3:43:98:a4:02:6a:50:cf:b4:5f:e3:b5:ab:29:55:cd:87",
+        "64:2a:b5:7e:21:f0:1b:23:fa:cb:e4:58:fc:16:45:65:ec:17:b2:ea:a7:13:31:71:e6:e9:d6:ac:34:0c:11:3e",
+        "64:2A:B5:7E:21:F0:1B:23:FA:CB:E4:58:FC:16:45:65:EC:17:B2:EA:A7:13:31:71:E6:E9:D6:AC:34:0C:11:3E"
       ]
     }
   }

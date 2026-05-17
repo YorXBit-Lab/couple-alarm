@@ -1,34 +1,12 @@
 import 'package:couple_note/core/config/app_constants.dart';
 import 'package:couple_note/core/constants/trans_keys.dart';
 import 'package:couple_note/core/utils/datetime_utils.dart';
-import 'package:couple_note/domain/entities/reminder.dart';
-import 'package:couple_note/domain/entities/user.dart';
+import 'package:couple_note/features/reminder/domain/entities/reminder.dart';
+import 'package:couple_note/features/user/domain/entities/user.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart';
-
-Color getPriorityColor(TodoPriority priority) {
-  switch (priority) {
-    case TodoPriority.high:
-      return Colors.red;
-    case TodoPriority.medium:
-      return Colors.orange;
-    case TodoPriority.normal:
-      return Colors.green;
-  }
-}
-
-String getPriorityLabel(TodoPriority priority) {
-  switch (priority) {
-    case TodoPriority.high:
-      return TransKeys.high.tr();
-    case TodoPriority.medium:
-      return 'TB';
-    case TodoPriority.normal:
-      return 'Thap';
-  }
-}
 
 IconData getStatusIcon(ApprovalStatus status) {
   switch (status) {

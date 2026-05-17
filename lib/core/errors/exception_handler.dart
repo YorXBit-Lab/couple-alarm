@@ -197,8 +197,8 @@ class ExceptionHandler {
         );
       case 'not-found':
         return AppException(
-          ErrorCode.noteNotFound.message,
-          code: ErrorCode.noteNotFound.code,
+          ErrorCode.alarmNotFound.message,
+          code: ErrorCode.alarmNotFound.code,
           originalError: e,
           stackTrace: stackTrace,
         );
@@ -280,7 +280,7 @@ class ExceptionHandler {
             case 404:
               return AppException(
                 'Resource not found',
-                code: ErrorCode.noteNotFound.code,
+                code: ErrorCode.alarmNotFound.code,
                 originalError: e,
                 stackTrace: stackTrace,
               );

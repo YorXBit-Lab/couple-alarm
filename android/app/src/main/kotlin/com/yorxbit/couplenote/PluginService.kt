@@ -25,7 +25,7 @@ class PluginService :
 
     companion object {
         const val CHANNEL_NAME = "app.channel/plugin"
-        const val WAKE_LOCK_TAG = "CoupleAlarm::AlarmWakeLock"
+        const val WAKE_LOCK_TAG = "CoupleNote::AlarmWakeLock"
         const val TAG = "PluginService"
     }
 

@@ -4,13 +4,13 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:couple_note/core/common/api_response.dart';
 import 'package:couple_note/core/config/app_constants.dart';
 import 'package:couple_note/core/errors/app_exception.dart';
-import 'package:couple_note/core/services/lib/core/local_storage_service.dart';
-import 'package:couple_note/core/services/lib/core/services/connectivity_service.dart';
+import 'package:couple_note/core/services/local_storage_service.dart';
+import 'package:couple_note/core/services/connectivity_service.dart';
 import 'package:couple_note/core/services/local_notification_service.dart';
 import 'package:couple_note/core/utils/datetime_utils.dart';
-import 'package:couple_note/data/repositories/reminder_repository_impl.dart';
-import 'package:couple_note/domain/entities/reminder.dart';
-import 'package:couple_note/domain/entities/user.dart';
+import 'package:couple_note/features/reminder/data/repository/reminder_repository_impl.dart';
+import 'package:couple_note/features/reminder/domain/entities/reminder.dart';
+import 'package:couple_note/features/user/domain/entities/user.dart';
 import 'package:couple_note/firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -78,7 +78,7 @@ Future<ReminderEntity?> _fetchReminder(int alarmId) async {
           onTimeout: () {
             debugPrint('Firestore timeout - working offline');
             return ApiResponse<ReminderEntity>.failure(
-              throw ThrowException(ErrorCode.reminderNotFound),
+              throw ThrowException(ErrorCode.alarmNotFound),
             );
           },
         );
