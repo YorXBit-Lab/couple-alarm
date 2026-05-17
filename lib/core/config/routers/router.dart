@@ -77,6 +77,11 @@ class AppRouter {
           builder: (context, state) => WelcomePage(),
         ),
         GoRoute(
+          path: '/home',
+          name: 'home',
+          builder: (context, state) => HomePage(),
+        ),
+        GoRoute(
           path: '/onboarding',
           name: 'onboarding',
           pageBuilder: (context, state) {
